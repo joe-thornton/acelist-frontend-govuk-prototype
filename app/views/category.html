@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <form class="form" action="/url/of/next/page" method="post">
+
+        {% from "govuk/components/radios/macro.njk" import govukRadios %}
+
+        {{ govukRadios({
+        idPrefix: "what-category",
+        name: "what-category",
+        fieldset: {
+        legend: {
+        text: "What category is your item in?",
+        isPageHeading: true,
+        classes: "govuk-fieldset__legend--l"
+        }
+        },
+        items: [
+        {
+        value: "electronics",
+        text: "Electronics"
+        },
+        {
+        value: "furniture",
+        text: "Furniture"
+        },
+        {
+        value: "kitchenware",
+        text: "Kitchenware"
+        },
+        {
+        divider: "or"
+        },
+        {
+        value: "other",
+        text: "Other"
+        }
+        ]
+        }) }}
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}
