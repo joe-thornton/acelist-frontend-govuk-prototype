@@ -13,7 +13,7 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <form class="form" action="/cost" method="post">
+      <form class="form" action="/price" method="post">
 
         {% from "govuk/components/input/macro.njk" import govukInput %}
 
@@ -22,6 +22,7 @@
         {{ govukTextarea({
         name: "description",
         id: "description",
+        value: data['description'],
         label: {
         text: "Can you describe the item in more detail?",
         classes: "govuk-label--l",

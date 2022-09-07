@@ -18,8 +18,9 @@
         {% from "govuk/components/input/macro.njk" import govukInput %}
 
         {{ govukInput({
-        id: "cost",
-        name: "cost",
+        id: "price",
+        name: "price",
+        value: data['price'],
         label: {
         text: "What is the cost for the item, in British pounds?",
         classes: "govuk-label--l",
