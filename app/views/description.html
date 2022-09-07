@@ -17,14 +17,19 @@
 
         {% from "govuk/components/input/macro.njk" import govukInput %}
 
-        {{ govukInput({
+        {% from "govuk/components/textarea/macro.njk" import govukTextarea %}
+
+        {{ govukTextarea({
+        name: "description",
+        id: "description",
         label: {
-        text: "What is the title for your item?",
+        text: "Can you describe the item in more detail?",
         classes: "govuk-label--l",
         isPageHeading: true
         },
-        id: "title",
-        name: "title"
+        hint: {
+        text: "Include further information the buyer might want to know - such as condition"
+        }
         }) }}
 
         <button class="govuk-button" data-module="govuk-button">Continue</button>
