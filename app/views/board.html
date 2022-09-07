@@ -13,13 +13,13 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <form class="form" action="/url/of/next/page" method="post">
+      <form class="form" action="/category" method="post">
 
         {% from "govuk/components/radios/macro.njk" import govukRadios %}
 
         {{ govukRadios({
-        idPrefix: "where-do-you-live",
-        name: "where-do-you-live",
+        idPrefix: "location",
+        name: "location",
         fieldset: {
         legend: {
         text: "Where do you want to post your listing?",
@@ -29,22 +29,22 @@
         },
         items: [
         {
-        value: "london",
+        value: "London",
         text: "London"
         },
         {
-        value: "manchester",
+        value: "Manchester",
         text: "Manchester"
         },
         {
-        value: "leeds",
+        value: "Leeds",
         text: "Leeds"
         },
         {
         divider: "or"
         },
         {
-        value: "other",
+        value: "Other",
         text: "Other"
         }
         ]
