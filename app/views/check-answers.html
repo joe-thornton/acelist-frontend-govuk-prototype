@@ -89,9 +89,13 @@
         </div>
       </dl>
 
-      <form action="/confirmation" method="post" novalidate>
+      <form action="/submit-item" method="post" novalidate>
 
-        <input type="hidden" name="answers-checked" value="true">
+        <input type="hidden" name="Location" value={{ data['location'] }}>
+        <input type="hidden" name="Category" value={{ data['category'] }}>
+        <input type="hidden" name="Title" value={{ data['title'] }}>
+        <input type="hidden" name="Description" value={{ data['description'] }}>
+        <input type="hidden" name="Price" value={{ data['price'] }}>
 
         <button type="submit" class="govuk-button" data-module="govuk-button">
           Post item for sale
