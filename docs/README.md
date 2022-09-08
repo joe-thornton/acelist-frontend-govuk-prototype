@@ -1,6 +1,12 @@
-# Documentation
+# Overview
 
-[Documentation and examples](https://govuk-prototype-kit.herokuapp.com/docs)
+This repo is intended to practice using the [GOV.UK Design System](https://design-system.service.gov.uk/)
 
-Documentation is also available when running the app locally at http:localhost:3000/docs
+It is a simple front-end for a marketplace (think Craigslist) where the user can post an item they wish to sell
 
+# Instructions
+
+- Download the repo
+- run `npm install`
+- run `npm start`
+- navigate to localhost:3000/start
