@@ -6,7 +6,16 @@ It is a simple front-end for a marketplace (think Craigslist) where the user can
 
 # Instructions
 
-- Download the repo
+## Frontend
+
+- Download this repo
 - run `npm install`
 - run `npm start`
 - navigate to localhost:3000/start
+
+## Backend
+
+- download [this repo](https://github.com/joe-thornton/scala-play-mongodb-govt-evolving-project)
+- use java version 11.0.16
+- use scala version 2.12.12
+- run `sbt run` to start the server
